@@ -1,0 +1,13 @@
+{
+    "requests_per_server": 200,
+    "mean_absolute_prediction_difference_minutes": 9.4845,
+    "requests_differing_more_than_10_minutes_percent": 35.0,
+    "production_p95_latency_ms": 3.509,
+    "candidate_p95_latency_ms": 3.659,
+    "production_model_versions": [
+        "v1"
+    ],
+    "candidate_model_versions": [
+        "v2"
+    ]
+}

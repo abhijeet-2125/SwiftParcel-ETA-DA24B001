@@ -1,0 +1,44 @@
+[PASS] Health endpoint: HTTP 200
+[PASS] Expected model version: expected=v1, actual=v1
+[PASS] ETA sanity: predicted ETA=49.5 minutes
+[PASS] Distance monotonicity sanity: 5 km=30.1 min, 25 km=81.7 min
+[PASS] Invalid input rejection: HTTP 422
+[PASS] Latency p95: p95=5.79 ms, limit=80.00 ms, errors=0
+
+========== RELEASE SMOKE TEST ==========
+Checks passed: 6/6
+Checks failed: 0/6
+[
+  {
+    "check": "Health endpoint",
+    "passed": true,
+    "detail": "HTTP 200"
+  },
+  {
+    "check": "Expected model version",
+    "passed": true,
+    "detail": "expected=v1, actual=v1"
+  },
+  {
+    "check": "ETA sanity",
+    "passed": true,
+    "detail": "predicted ETA=49.5 minutes"
+  },
+  {
+    "check": "Distance monotonicity sanity",
+    "passed": true,
+    "detail": "5 km=30.1 min, 25 km=81.7 min"
+  },
+  {
+    "check": "Invalid input rejection",
+    "passed": true,
+    "detail": "HTTP 422"
+  },
+  {
+    "check": "Latency p95",
+    "passed": true,
+    "detail": "p95=5.79 ms, limit=80.00 ms, errors=0"
+  }
+]
+
+RELEASE GATE: PASS

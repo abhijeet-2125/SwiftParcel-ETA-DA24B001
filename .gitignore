@@ -1,0 +1,61 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Model artifacts
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+
+# MLflow tracking data and databases
+mlruns/
+mlflow.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Ray temporary files
+.ray/
+ray_results/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS and editor files
+.DS_Store
+.AppleDouble
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.tmp
+*.bak
+
+# Build artifacts
+build/
+dist/
