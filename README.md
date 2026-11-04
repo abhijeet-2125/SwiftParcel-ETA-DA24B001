@@ -1,4 +1,4 @@
-# SwiftParcel ETA 🚚
+# SwiftParcel ETA 
 ### Production-Oriented ETA Prediction, Model Governance & Safe Deployment
 
 SwiftParcel ETA is an end-to-end machine learning serving and deployment project that demonstrates how an ETA prediction model can move from experimentation to production through controlled evaluation, model governance, shadow testing, canary deployment, and release validation.
@@ -7,7 +7,7 @@ The project combines **FastAPI, MLflow, Ray Serve, and Python-based performance 
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Build a REST API for real-time and batch ETA predictions.
 - Track and version production and candidate models using MLflow.
@@ -16,7 +16,7 @@ The project combines **FastAPI, MLflow, Ray Serve, and Python-based performance 
 - Deploy models using Ray Serve with customer-level sticky canary routing.
 - Validate deployments through automated smoke tests and release-abort policies.
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```text
                  ETA Prediction Models
@@ -45,7 +45,7 @@ The project combines **FastAPI, MLflow, Ray Serve, and Python-based performance 
                   Release Validation
 ```
 
-## 🧰 Technology Stack
+## Technology Stack
 
 | Component | Technology |
 |---|---|
@@ -60,7 +60,7 @@ The project combines **FastAPI, MLflow, Ray Serve, and Python-based performance 
 | Performance testing | Custom Python load generator |
 | Tracking backend | SQLite |
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Module4_SwiftParcel/
@@ -103,7 +103,7 @@ Module4_SwiftParcel/
 └── README.md
 ```
 
-## ⚙️ Setup and Installation
+## Setup and Installation
 
 ### 1. Clone the repository
 
@@ -139,7 +139,7 @@ Generate the sample dataset used by the load generator:
 python -c "import pandas as pd, eta_data; pd.read_csv('data/eta_fresh.csv')[eta_data.FEATURES].head(200).to_csv('data/eta_sample.csv', index=False)"
 ```
 
-## 🔬 Implementation Overview
+## Implementation Overview
 
 ### Part A — REST API and Performance Engineering
 
@@ -223,7 +223,7 @@ The recorded release validation passed all 6 checks.
 
 Documented abort policies cover latency degradation, HTTP 5xx errors, overall model regression, and slice-level regression.
 
-## 📊 Overall Results
+## Overall Results
 
 | Evaluation | Result |
 |---|---|
@@ -234,7 +234,7 @@ Documented abort policies cover latency degradation, HTTP 5xx errors, overall mo
 | Candidate overall MAE improvement | 48.94% |
 | Best recorded API throughput | 1,829.8 RPS |
 
-## 📑 Documentation
+## Documentation
 
 For the detailed implementation, experiments, evaluation methodology, results, limitations, and release state machine, see:
 
@@ -243,7 +243,7 @@ For the detailed implementation, experiments, evaluation methodology, results, l
 - [`partC_ray_serve/C3_explanations.md`](partC_ray_serve/C3_explanations.md) — Ray Serve design decisions.
 - [`partD_release_gate/abort_criteria.md`](partD_release_gate/abort_criteria.md) — Release-abort policies.
 
-## ⚠️ Reproducibility and Limitations
+## Reproducibility and Limitations
 
 - Model bundles and MLflow tracking databases are generated locally and are not included in the repository.
 - Run `eta_data.py` to regenerate the required model artifacts and datasets.
@@ -251,7 +251,7 @@ For the detailed implementation, experiments, evaluation methodology, results, l
 - The documented abort policies are proposed release controls; continuous automated abort monitoring was not implemented.
 - The Part D smoke test was validated against the Part A REST API, not the Ray Serve ingress.
 
-## 👨‍💻 Author
+## Author
 
 **Abhijeet Kumar, DA24B001**  
 B.Tech — Artificial Intelligence and Data Analytics  
